@@ -6,8 +6,7 @@
   "dependencies": {
     "dotenv": "^2.0.0",
     "qs": "^6.3.0",
-    "request": "^2.79.0",
-    "serverless-plugin-write-env-vars": "^1.0.1"
+    "request": "^2.79.0"
   },
   "devDependencies": {},
   "scripts": {
@@ -19,5 +18,9 @@
     "serverless"
   ],
   "author": "Bill Glover",
-  "license": "MIT"
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ScriptGadget/serverless-slack-join.git"
+  }
 }
