@@ -6,6 +6,7 @@
 
 'use strict';
 var qs = require('qs');
+var isEmail = require('validator/lib/isEmail');
 var reply = require('./lib/reply');
 var slack = require('./lib/slack'); 
 
@@ -17,5 +18,10 @@ module.exports.join = (event, context, callback) => {
   if (! params.email) {
     return reply.reply(200, { error: "email address is required" }, callback);
   }
+  
+  if (! isEmail(params.email)) {
+    return reply.reply(200, { error: "a valid email address is required" }, callback);
+  }
+  
   return slack.join(params, callback);
 };

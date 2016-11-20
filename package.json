@@ -6,7 +6,8 @@
   "dependencies": {
     "dotenv": "^2.0.0",
     "qs": "^6.3.0",
-    "request": "^2.79.0"
+    "request": "^2.79.0",
+    "validator": "^6.1.0"
   },
   "devDependencies": {},
   "scripts": {
