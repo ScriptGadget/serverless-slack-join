@@ -1,0 +1,23 @@
+{
+  "name": "serverless-slack-join",
+  "version": "1.0.0",
+  "description": "A simple Serverless Framework endpoint to invite people to your Slack.",
+  "main": "handler.js",
+  "dependencies": {
+    "dotenv": "^2.0.0",
+    "qs": "^6.3.0",
+    "request": "^2.79.0",
+    "serverless-plugin-write-env-vars": "^1.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "slack",
+    "invite",
+    "serverless"
+  ],
+  "author": "Bill Glover",
+  "license": "MIT"
+}

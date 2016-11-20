@@ -1,0 +1,4 @@
+# You can get your Slack test token here: https://api.slack.com/docs/oauth-test-tokens
+
+slack_domain="someteam.slack.com"
+slack_token="aaaa-111111111111-222222222222-333333333333-4444444444444444444444"
