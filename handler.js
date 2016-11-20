@@ -5,6 +5,7 @@
 //
 
 'use strict';
+
 var qs = require('qs');
 var isEmail = require('validator/lib/isEmail');
 var reply = require('./lib/reply');
