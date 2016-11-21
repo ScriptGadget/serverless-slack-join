@@ -17,11 +17,11 @@ module.exports.join = (event, context, callback) => {
   var params = qs.parse(event.body);
   
   if (! params.email) {
-    return reply.reply(200, { error: "email address is required" }, callback);
+    return reply.reply(200, "email address is required", callback);
   }
   
   if (! isEmail(params.email)) {
-    return reply.reply(200, { error: "a valid email address is required" }, callback);
+    return reply.reply(200, "a valid email address is required", callback);
   }
   
   return slack.join(params, callback);
