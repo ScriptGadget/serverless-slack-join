@@ -1,0 +1,40 @@
+#!/bin/bash
+#
+# a simple setup script for dply or Digital Ocean
+#
+# This assumes an Ubuntu 16.04 instance.
+#
+# Use:
+#
+# #cloud-config
+#
+# runcmd:
+#   -  curl https://raw.githubusercontent.com/ScriptGadget/serverless-slack-join/master/cloud-setup | bash
+# 
+###########################################################################################################
+
+setup_all () {
+    # set the environment
+    export HOME=/root
+    cd $HOME
+	
+    touch "setup-start_$(date -Iseconds)"    
+    
+	# packages
+	apt-get update
+	apt-get install -y git-core
+	apt-get install -y build-essential libssl-dev
+
+    # Node (for grunt)
+    curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.32.1/install.sh | bash
+    export NVM_DIR="$HOME/.nvm"
+    [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" # This loads nvm
+    nvm install 6 node # install Nodejs 6
+    npm install -g serverless
+	
+    # watch for the setup-done to appear before trying to use anything.
+	echo "Done"
+	touch "setup-done_$(date -Iseconds)"
+}
+
+setup_all
