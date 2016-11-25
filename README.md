@@ -2,14 +2,17 @@
 
 An automated way for your team members to sign-up for your [Slack](https://slack.com).
 
-## Installation
+[][![Dply](https://dply.co/b.svg)](https://dply.co/b/AYW59kzn)
+
+Or you can follow the Manual Installation steps yourself. Either way, make sure you do the [Setup Credentials and Deploy](Setup-Credentials-and-Deploy) steps below.
+
+## Manual Installation
 
 * [Install node](https://nodejs.org/en/download/)
 * Install [Serverless](https://serverless.com/)
 ```
 npm install -g serverless
 ```
-* Setup your [AWS keys](https://serverless.com/framework/docs/providers/aws/guide/credentials/)
 * Clone this repository
 ```
 git clone https://github.com/ScriptGadget/serverless-slack-join
@@ -22,6 +25,10 @@ cd serverless-slack-join
 ```
 npm install
 ```
+
+## Setup Credentials and Deploy
+
+* Setup your [AWS keys](https://serverless.com/framework/docs/providers/aws/guide/credentials/)
 * Get your [Slack test credentials](https://api.slack.com/docs/oauth-test-tokens). You will need to be logged in as an admin or owner in your slack.
 * create a .env file
 ```
