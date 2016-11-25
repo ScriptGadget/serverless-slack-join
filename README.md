@@ -2,7 +2,7 @@
 
 An automated way for your team members to sign-up for your [Slack](https://slack.com).
 
-[][![Dply](https://dply.co/b.svg)](https://dply.co/b/AYW59kzn)
+[![Dply](https://dply.co/b.svg)](https://dply.co/b/AYW59kzn)
 
 Or you can follow the Manual Installation steps yourself. Either way, make sure you do the [Setup Credentials and Deploy](Setup-Credentials-and-Deploy) steps below.
 
