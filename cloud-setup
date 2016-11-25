@@ -18,7 +18,7 @@ setup_all () {
     export HOME=/root
     cd $HOME
 
-    touch "setup-start_$(date -Iseconds)"
+    touch "LOADING_PLEASE_WAIT"
 
     # packages
     apt-get update
@@ -32,9 +32,16 @@ setup_all () {
     nvm install 6 node # install Nodejs 6
     npm install -g serverless
 
-    # watch for the setup-done to appear before trying to use anything.
+    # Clone the project
+    git clone https://github.com/ScriptGadget/serverless-slack-join.git
+    pushd serverless-slack-join
+    npm install
+    popd
+
+    # watch for the README to appear before trying to use anything.
     echo "Done"
-    touch "setup-done_$(date -Iseconds)"
+    rm LOADING_PLEASE_WAIT
+    echo "The system is ready. You may need to logout and log back to set your environment correctly." >  README
 }
 
 setup_all
