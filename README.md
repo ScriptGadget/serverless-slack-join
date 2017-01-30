@@ -1,6 +1,7 @@
-# serverless-slack-join
-
+# serverless-slack-join 
 An automated way for your team members to sign-up for your [Slack](https://slack.com).
+
+Current Build Status: [![Code Climate](https://codeclimate.com/github/ScriptGadget/serverless-slack-join/badges/gpa.svg)](https://codeclimate.com/github/ScriptGadget/serverless-slack-join)
 
 You can try it out with DPLY
 
